@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Sans:wght@300&family=Poppins:wght@500&display=swap');
+
+:root {
+    --primary-color: blue;
+    --secondary-color: white;
+    --terinary-color: #FF4141;
+    --background-color: #f6f6f9;
+}
+
+.cen{
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.center {
+    height: 30rem;
+    width: 50rem;
+    margin: 2rem 0rem;
+    background-color: var(--secondary-color);
+    position: relative;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right > h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.75rem;
+}
+
+.image{
+    padding-left: 2rem;
+    height: 16rem;
+    width: 13rem;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem 1.5rem;
+    gap: 0.3rem;
+}
+
+.input-box > input {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 0.025rem solid rgba(0, 0, 0, 0.219);
+}
+
+#dual-box {
+    display: flex;
+    padding: 0.5rem 1.5rem;
+}
+
+#dual-box > .input-box:first-child {
+    padding:0;
+    padding-right: 0.25rem;
+}
+
+#dual-box > .input-box:last-child {
+    padding:0;
+    padding-left: 0.25rem;
+    width: 100%;
+}
+
+.gender-box {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.5rem;
+    border: 0.05rem solid transparent;
+    border-radius: 0.25rem;
+    margin-top: 0.5rem;
+    transition-duration: 0.2s;
+    color: var(--secondary-color);
+    background-color: var(--terinary-color);
+    font-weight: bolder;
+}
+
+button:hover {
+    color: var(--terinary-color);
+    background-color: var(--secondary-color);
+    border: 0.1rem solid var(--terinary-color);
+}
+
+.input-box > p {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sigin{
+    margin: 0 20px;
+    color: #5c5c5c;
+    font-size: 16px;
+    font-weight: 500;
+}
+.sigin span{
+    color: var(--terinary-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+.agree{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+@media(max-width:800px){
+    .image{
+        display: none;
+    }
+}
+@media(max-width:500px){
+    .image{
+        display: none;
+    }
+    .center {
+        flex-direction: column;
+        padding: 10px 10px;
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-width:400px){
+    .image{
+        display: none;
+    }
+    .center {
+        flex-direction: column;
+        padding: 10px 10px;
+        width: 100%;
+        height: auto;
+    }
+    #dual-box {
+        flex-direction: column;
+    }
+    
+}
